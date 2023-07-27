@@ -15,7 +15,7 @@ export const CartProvider = ({ children }: ICartContextProps) => {
     const [cart, setCart] = useState<ICart[]>(getLocalStorage())
     const [totalItems, setTotalItems] = useState(0)
     const [totalAmount, setTotalAmount] = useState(0)
-    const [shipping, setShipping] = useState(534)
+    const shipping = 534
 
     const addToCart = (id: string, color: string, amount: number, product: ISingleProduct) => {
         // VERIFY IF ITEM IS IN CART
